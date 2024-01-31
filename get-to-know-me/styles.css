@@ -146,7 +146,7 @@
     left:calc(50% - 250px);
     top:calc(50% - 100px);
     border-radius:10px;
-    filter:drop-shadow(5px 0px black);
+    filter:drop-shadow(5px 5px black);
     display:none;
     justify-content:center;
     align-items:center;
