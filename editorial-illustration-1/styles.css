@@ -1,0 +1,113 @@
+img{
+    position:absolute;
+}
+
+#background1{
+    width:100vw;
+    height:auto;
+    left:-1px;
+    top:-5px;
+}
+
+#background2{
+    width:100vw;
+    height:auto;
+    left:-1px;
+    top:-5px;
+}
+
+#cloud1{
+    position:absolute;
+    left:-50vw;
+    top:12vw;
+    width:52vw;
+    opacity:0;
+}
+
+#cloud2{
+    position:absolute;
+    left:-80vw;
+    top:3vw;
+    width:35vw;
+    opacity:0;
+}
+
+#cloud3{
+    position:absolute;
+    left:-52vw;
+    top:35vw;
+    width:47vw;
+    opacity:0;
+}
+
+#cloud4{
+    position:absolute;
+    left:-100vw;
+    top:25vw;
+    width:40vw;
+    opacity:0;
+}
+
+#hill1{
+    width:80vw;
+    height:auto;
+    left:-10vw;
+    top:40vw;
+    filter: drop-shadow(0px 1px 10px #321f0e);
+    /* left:-15px;
+    top:200px; */
+}
+
+#hill2{
+    width:100vw;
+    height:auto;
+    right:-25vw;
+    top:45vw;
+    filter: drop-shadow(0px 1px 10px #321f0e);
+}
+
+#quarter{
+    width:30vw;
+    height:auto;
+    left:32vw;
+    top:45vw;
+    filter: drop-shadow(0px 0px 50px rgb(255, 236, 142));
+}
+
+#birds{
+    width:35vw;
+    position:absolute;
+    left:60vw;
+    top:63vw;
+}
+
+.bird{
+    width:35vw;
+    position:absolute;
+}
+
+#canvas{
+    width:90vw;
+    height:90vw;
+    position:relative;
+    /* width:2048px;
+    height:2048px; */
+    overflow:hidden;
+}
+
+#spacer2{
+    width:100vw;
+    height:1000px;
+    position:relative;
+}
+
+#spacer1{
+    width:100vw;
+    height:200px;
+    position:relative;
+}
+
+.page{
+    position:relative;
+    width:100vw;
+}
