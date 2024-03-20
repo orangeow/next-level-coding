@@ -1,0 +1,120 @@
+textPath{
+    /* fill: rgb(207, 70, 20); */
+    /* font-size:50pt; */
+    font-family: "annuario-variable", sans-serif;
+    font-variation-settings: "wght" 700, "wdth" 20; 
+    /* font-family: "adapt-variable", sans-serif;
+    font-variation-settings: "wdth" 100, "wght" 200;  */
+    /* letter-spacing: 2rem; */
+    /* width is 40-100 weight is 100 to 900 */
+}
+
+
+#face{
+    width:93vw;
+    position:absolute;
+    left:3vw;
+    top:-6vw;
+}
+
+.letter-part{
+    position:absolute;
+    width:12vw;
+}
+
+.color{
+    position:absolute;
+    width:100%;
+    height:100%;
+    mix-blend-mode: screen;
+    background-color:#CF4614;
+}
+
+.letter{
+    position:relative;
+    /* filter: grayscale(100%); */
+}
+
+#all-letters{
+    position:relative;
+}
+
+#logo-container{
+    position:absolute;
+    top:10vw;
+    left:3vw;
+}
+
+
+#cap-H{
+    rotate: -60deg;
+    top:36vw;
+}
+
+#first-i{
+    top: 26vw;
+    rotate:-50deg;
+    left: 6vw;
+}
+
+#first-g{
+    top: 19vw;
+    rotate:-36deg;
+    left:16vw;
+}
+
+#first-h{
+    top: 7.5vw;
+    rotate:-15deg;
+    left:26vw;
+}
+
+#l{
+    left: 39vw;
+    top:4vw;
+    rotate: -2deg;
+}
+
+#second-g{
+    top: 3vw;
+    left:40vw;
+}
+#second-i{
+    position:absolute;
+    margin-left:-5vw;
+    left:51vw;
+    top:4vw;
+}
+
+#second-g{
+    margin-left:-5vw;
+    left:64vw;
+    top:9vw;
+    rotate:25deg;
+}
+
+#second-h{
+    margin-left:-5vw;
+    left:78vw;
+    top:13vw;
+    rotate:45deg;
+}
+
+#t{
+    margin-left:-6vw;
+    top:21vw;
+    left:86.5vw;
+    rotate:58deg;
+}
+
+#s{
+    margin-left:-7vw;
+    top:30vw;
+    left:92vw;
+    rotate: 63deg;
+}
+
+/* #typepath{
+    position:absolute;
+    top:75px;
+} */
