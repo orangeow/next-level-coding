@@ -1,0 +1,136 @@
+#scent{
+    font-family: "freight-micro-pro", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18pt;
+    width:175px;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    position:absolute;
+    top:270px;
+    left:calc(50% - 87.5px);
+    color:white;
+    line-height: 1.3rem;
+}
+
+#label-container{
+    width:300px;
+    height: 350px;
+    /* background-color: hsl(11, 72%, 51%); */
+    position:relative;
+    top:calc(50% - 175px);
+    /* opacity:20%; */
+    display:none;
+}
+
+#border{
+    width:300px;
+    height:auto;
+    position:absolute;
+    top:5px;
+}
+
+#old-spice{
+    width:300px;
+    height:auto;
+}
+
+#boat-container{
+    width:300px;
+    height:auto;
+    position:absolute;
+}
+
+#variables{
+    width:300px;
+    height:auto;
+    position:absolute;
+}
+
+.boat{
+    width:300px;
+    height:auto;
+    top: -5px;
+    position:absolute;
+}
+
+#scent-selector{
+    margin-top: 20px;
+    width:120px;
+    left:100px;
+    position:absolute;
+    top:500px;
+}
+
+#generator-container{
+    width:400px;
+    position:relative;
+    left:calc(50% - 200px);
+    height:500px;
+}
+
+/* #boat-color{
+    width: 300px;
+    height: 350px;
+    position: absolute;
+    left:0px;
+    top:0px;
+    background-color: hsl(13, 72%, 51%);
+    mix-blend-mode: screen;
+} */
+
+#title{
+    width:300px;
+    height:auto;
+    position:absolute;
+    left:0px;
+    top: 0px;
+}
+
+#freshness{
+    width: 300px;
+    height: 350px;
+    position: absolute;
+    left:0px;
+    top:0px;
+    background-color: #6294CE;
+    display: none;
+    /* opacity:100%; */
+}
+
+#spiciness{
+    width: 300px;
+    height: 350px;
+    position: absolute;
+    left:0px;
+    top:0px;
+    background-color: hsl(11, 72%, 51%);
+    display: none;
+    /* opacity:100%; */
+}
+
+.stripe{
+    width:1%;
+    height:100%;
+    opacity:1;
+}
+
+#stripes{
+    position: absolute;
+    top:0;
+    left:0;
+    display:flex;
+    flex-wrap:wrap;
+    /* justify-content: space-around; */
+    opacity:1;
+    width:76%;
+    height:100%;
+}
+
+/* #yellow-filter{
+    position:absolute;
+    width:76%;
+    height:100%;
+    /* mix-blend-mode: ; */
+    /* background-color:yellow;
+}
