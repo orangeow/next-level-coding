@@ -14,7 +14,11 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-
+        <div id="sidebar">
+            <p>scent selector</p>
+            <input type="range" id="scent-selector" min="0" max="17" value="0" oninput="generate()">
+        </div>
+        
         <div id="generator-container">
 
         <div id="stripes">
@@ -126,7 +130,7 @@
             <div id="spiciness"></div>
             <div id="freshness"></div>
 
-            <img id="border" src="border-new-30.png">
+            <img id="border" src="border-30.png">
             <div id="variables">
                 <div id="old-spice">
                     <!-- <img id='title' src='titles-1.png'> -->
@@ -143,7 +147,7 @@
 
         </div>
 
-        <input type="range" id="scent-selector" min="0" max="17" value="0" oninput="generate()">
+        
         </div>
         
         <script src="script.js" async defer></script>

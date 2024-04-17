@@ -2,52 +2,51 @@
     font-family: "freight-micro-pro", serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 18pt;
+    font-size: 21pt;
     width:175px;
     text-align: center;
     letter-spacing: 0.1rem;
     position:absolute;
-    top:270px;
     left:calc(50% - 87.5px);
     color:white;
-    line-height: 1.3rem;
+    line-height: 1.4rem;
 }
 
 #label-container{
-    width:300px;
+    width:100%;
     height: 350px;
     /* background-color: hsl(11, 72%, 51%); */
-    position:relative;
-    top:calc(50% - 175px);
+    position:absolute;
+    top:14%;
     /* opacity:20%; */
 }
 
 #border{
-    width:300px;
+    width:100%;
     height:auto;
     position:absolute;
     top:5px;
 }
 
 #old-spice{
-    width:300px;
+    width:100%;
     height:auto;
 }
 
 #boat-container{
-    width:300px;
+    width:100%;
     height:auto;
     position:absolute;
 }
 
 #variables{
-    width:300px;
+    width:100%;
     height:auto;
     position:absolute;
 }
 
 .boat{
-    width:300px;
+    width:100%;
     height:auto;
     top: -5px;
     position:absolute;
@@ -55,17 +54,17 @@
 
 #scent-selector{
     margin-top: 20px;
-    width:120px;
-    left:100px;
+    width:200px;
+    left:12.5%;
     position:absolute;
-    top:500px;
+    top:55%;
 }
 
 #generator-container{
-    width:400px;
-    position:relative;
-    left:calc(50% - 200px);
-    height:500px;
+    width:30vw;
+    position:absolute;
+    left:35%;
+    height:98vh;
 }
 
 /* #boat-color{
@@ -79,7 +78,7 @@
 } */
 
 #title{
-    width:300px;
+    width:100%;
     height:auto;
     position:absolute;
     left:0px;
@@ -92,7 +91,7 @@
     position: absolute;
     left:0px;
     top:0px;
-    background-color: #6294CE;
+    background-color: #467ab5;
     display: none;
     /* opacity:100%; */
 }
@@ -103,7 +102,7 @@
     position: absolute;
     left:0px;
     top:0px;
-    background-color: hsl(11, 72%, 51%);
+    background-color: hsl(2, 53%, 55%);
     display: none;
     /* opacity:100%; */
 }
@@ -122,9 +121,57 @@
     flex-wrap:wrap;
     /* justify-content: space-around; */
     opacity:1;
-    width:76%;
+    width:100%;
     height:100%;
 }
+
+input[type=range]{
+    -webkit-appearance: none;
+    background: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  border: 2px solid white;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: rgb(52, 52, 52);
+  cursor: pointer;
+  margin-top: -7px;
+  }
+  
+  input[type=range]:focus {
+    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+  }
+  
+  input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+  
+    /* Hides the slider so custom styles can be added */
+    background: transparent; 
+    border-color: transparent;
+    color: transparent;
+  }
+
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    background: rgb(52, 52, 52);
+    border-radius: 1.3px;
+    /* border: 0.2px solid #010101; */
+  }
+
+  #sidebar{
+    position:absolute;
+    width:20vw;
+    height:20vh;
+    border:1px dashed rgb(52, 52, 52);
+    border-radius:20px;
+    margin:20px;
+  }
 
 /* #yellow-filter{
     position:absolute;
@@ -132,4 +179,22 @@
     height:100%;
     /* mix-blend-mode: ; */
     /* background-color:yellow;
+}*/
+
+body{
+    background-color:#fffdeb;
+}
+
+p{
+    font-family: "freight-micro-pro", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 22pt;
+    width:100%;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    line-height: 1.75rem;
+    position:absolute;
+    color:rgb(52, 52, 52);
+    top:5%;
 }

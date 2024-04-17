@@ -30,39 +30,78 @@ fetch(opensheet_uri)
     .then(function (data) {
         console.log(data);
 
+            scentSelector.setAttribute("max", data.length);
+
             console.log("scent selected " + scentSelection);
             console.log(data[scentSelection].intensity);
 
             // freshness.style.opacity = data[scentSelection].freshness * 10 + 20 + "%";
             // spiciness.style.opacity = data[scentSelection].spiciness * 10 + 20 + "%";
 
+            let freshSpiceRatio = data[scentSelection].freshness/data[scentSelection].spiciness + 1;
+            let spiceFreshRatio = data[scentSelection].spiciness/data[scentSelection].freshness + 1;
+
             let realScentScore = 10 + data[scentSelection].freshness - data[scentSelection].spiciness;
             
-            console.log(freshness);
+            console.log("spicy to fresh ratio " + Math.floor(spiceFreshRatio));
+            console.log("fresh to spicy ratio " + Math.floor(freshSpiceRatio));
 
-            for(let j = 0; j<stripes.length;j++){
-                if(data[scentSelection].freshness == j){
-                    for(let i = 0; i<stripes.length;i++){
-                        if(data[scentSelection].freshness == 10){
-                            stripes[i].style.backgroundColor = "#6294CE";
-                        } else if(i%j==0){
-                            stripes[i].style.backgroundColor = "hsl(11, 72%, 51%)";
-                        } else {
-                            stripes[i].style.backgroundColor = "#6294CE";
-                        }
+            if(Math.floor(spiceFreshRatio) >=2 && Math.floor(spiceFreshRatio) > Math.floor(freshSpiceRatio)){
+                for(let i = 0; i<stripes.length;i++){
+                    if(Math.floor(spiceFreshRatio) == 11){
+                        stripes[i].style.backgroundColor = "hsl(2, 50%, 55%)";
+                    } else if(i%Math.floor(spiceFreshRatio * 1.2) == 0){
+                        stripes[i].style.backgroundColor = "#5387c6";
+                    } else {
+                        stripes[i].style.backgroundColor = "hsl(2, 50%, 55%)";
                     }
                 }
             }
+            if(Math.floor(freshSpiceRatio) >=2 && Math.floor(freshSpiceRatio) > Math.floor(spiceFreshRatio)){
+                for(let i = 0; i<stripes.length;i++){
+                    if(Math.floor(freshSpiceRatio) == 11){
+                        stripes[i].style.backgroundColor = "#5387c6";
+                    } else if(i%Math.floor(freshSpiceRatio * 1.2) == 0){
+                        stripes[i].style.backgroundColor = "hsl(2, 50%, 55%)";
+                    } else {
+                        stripes[i].style.backgroundColor = "#5387c6";
+                    }
+                }
+            }
+
+            if(Math.floor(freshSpiceRatio) == 2){
+                for(let i = 0; i<stripes.length; i++){
+                    if(i%2 == 0){
+                        stripes[i].style.backgroundColor = "#5387c6";
+                    } else {
+                        stripes[i].style.backgroundColor = "hsl(2, 50%, 55%)";
+                    }
+                }
+            }
+
+            // for(let j = 0; j<stripes.length;j++){
+            //     if(data[scentSelection].freshness == j){
+            //         for(let i = 0; i<stripes.length;i++){
+            //             if(data[scentSelection].freshness == 10){
+            //                 stripes[i].style.backgroundColor = "#6b9cc5";
+            //             } else if(i%j==0){
+            //                 stripes[i].style.backgroundColor = "hsl(11, 58%, 58%)";
+            //             } else {
+            //                 stripes[i].style.backgroundColor = "#6b9cc5";
+            //             }
+            //         }
+            //     }
+            // }
 
             scentName.innerHTML = data[scentSelection].name;
             let nameLength = scentName.innerHTML.length;
 
             if(nameLength > 12){
                 // scentName.style.fontSize = 20 + "pt";
-                scentName.style.top = 255 + "px";
+                scentName.style.top = 380 + "px";
             } else {
                 // scentName.style.fontSize = 24 + "pt";
-                scentName.style.top = 265 + "px";
+                scentName.style.top = 390 + "px";
             }
 
             if(data[scentSelection].intensity == 1 || data[scentSelection].intensity == 2){
