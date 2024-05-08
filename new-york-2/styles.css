@@ -30,7 +30,7 @@ body{
     height:calc((5vw / 3) - 2px); */
     width:calc((5vw / 3));
     height:calc((5vw / 3));
-    border:0.25px solid rgb(209, 209, 209);
+    border:1px solid rgb(209, 209, 209);
     /* border:1px solid rgb(144, 144, 144); */
     margin:0px;
     padding:0px;
@@ -142,16 +142,20 @@ body{
     font-weight:300;
     font-size:20px;
     cursor: pointer;
-    color:white;
+    color:black;
     position:absolute;
+    background-color:white;
+    padding:10px;
+    border-radius:5px;
     top:50%;
     left:10%;
     transition:500ms;
 }
 
 #submit:hover{
-    left: 9%;
-    top: 49%;
+    /* left: 9%;
+    top: 49%; */
+    background-color: rgb(128, 128, 128);
 }
 
 #indicator{
