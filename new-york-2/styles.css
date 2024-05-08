@@ -1,0 +1,162 @@
+body{
+    overflow:hidden;
+}
+
+#wall-container{
+    width: 100vw;
+    height:100vh;
+    position:relative;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+    align-items:flex-start;
+    align-content: flex-start;
+    left:-8px;
+    top:-8px;
+}
+
+.tile-set{
+    width:5vw;
+    height:5vw;
+    display:flex;
+    flex-wrap:wrap;
+    margin:0px;
+    /* background-image: url(tile-texture-square.jpg);
+    background-size: 100%; */
+}
+
+.tile{
+    /* width:calc((5vw / 3) - 2px);
+    height:calc((5vw / 3) - 2px); */
+    width:calc((5vw / 3));
+    height:calc((5vw / 3));
+    border:0.25px solid rgb(209, 209, 209);
+    /* border:1px solid rgb(144, 144, 144); */
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    mix-blend-mode:multiply;
+}
+
+/* menu styling */
+#selection-menu{
+    position:absolute;
+    background-color: rgb(28, 28, 28);
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    width:20vw;
+    right:0vw;
+    height:90vh;
+    top:5vh;
+    transition:1s;
+    border-radius:5px;
+}
+
+.prompt{
+    /* font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;  */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    font-weight: bold;
+
+    /* font-family:helvetica;
+    font-weight:bold; */
+    position:absolute;
+    font-size:24px;
+    color:white;
+
+    /* line-height:1.75rem; */
+    /* margin:35px;
+    margin-top:50px;
+    margin-bottom:20px; */
+    width:20vw;
+    height:10%;
+    top:10px;
+    text-align:left;
+    padding-top:20px;
+    padding-left:20px;
+    border-top:2px solid white;
+}
+
+.option{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    font-size:20px;
+    font-weight:300;
+    margin:10px;
+    text-align:left;
+    color:white;
+    cursor:pointer;
+}
+
+#options{
+    font-family:helvetica;
+    font-weight:bold;
+    height:60%;
+    width:50%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    align-items:left;
+    align-content:left;
+    cursor:pointer;
+}
+
+.question{
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+}
+
+#title{
+    width: calc((5vw / 3) * 21);
+    height:auto;
+    position:absolute;
+    left:15vw;
+    top: 10vw;
+}
+
+.answers{
+    width:80%;
+    left:10%;
+    position:absolute;
+    top:20%;
+}
+
+/* #exhibition-title{
+    font-family:helvetica;
+    font-size:100px;
+    color:black;
+    line-height: 6.5rem;
+}
+
+#exhibition-title-container{
+    width:35vw;
+    position:absolute;
+    top:9vh;
+    left:20vw;
+} */
+
+#submit{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    font-weight:300;
+    font-size:20px;
+    cursor: pointer;
+    color:white;
+    position:absolute;
+    top:50%;
+    left:10%;
+    transition:500ms;
+}
+
+#submit:hover{
+    left: 9%;
+    top: 49%;
+}
+
+
+/* .question-2{
+}
+
+#question-3{
+} */
