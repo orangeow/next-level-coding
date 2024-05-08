@@ -154,6 +154,16 @@ body{
     top: 49%;
 }
 
+#indicator{
+    width:30px;
+    height:30px;
+    rotate: 45deg;
+    border-left:3px solid rgb(28, 28, 28);
+    border-bottom:3px solid rgb(28, 28, 28);
+    position:absolute;
+    right:20px;
+    top:calc(50vh - 50px);
+}
 
 /* .question-2{
 }
