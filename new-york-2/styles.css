@@ -21,6 +21,7 @@ body{
     display:flex;
     flex-wrap:wrap;
     margin:0px;
+    position:relative;
     /* background-image: url(tile-texture-square.jpg);
     background-size: 100%; */
 }
@@ -51,6 +52,7 @@ body{
     top:5vh;
     transition:1s;
     border-radius:5px;
+    z-index:1001;
 }
 
 .prompt{
@@ -169,6 +171,42 @@ body{
     top:calc(50vh - 50px);
 }
 
+.chip{
+    width: 0; 
+    height: 0; 
+    border-left: calc((5vw / 6)) solid transparent;
+    border-right: calc((5vw / 6)) solid transparent;
+    border-bottom: calc((5vw / 6)) solid rgb(209, 209, 209);
+    border-radius:0 0 10px 0;
+    rotate:45deg;
+    position:absolute;
+    right:-8px;
+    top:-1px;
+}
+
+.key{
+    width:100%;
+    height:100%;
+    font-family: "Helvetica Neue";
+    font-weight:500;
+    font-size:11px;
+    color:white;
+    background-color: rgb(28, 28, 28);
+    opacity:0;
+    transition:300ms;
+    position:absolute;
+    box-sizing: border-box;
+    padding:5px;
+    padding-left:10px;
+    padding-top: 3px;
+    top:0;
+    left:0;
+    z-index: 1000;
+}
+/* 
+.key:hover{
+    opacity:70%;
+} */
 /* .question-2{
 }
 
