@@ -25,82 +25,51 @@ textPath{
     position:relative;
 }
 
+
+.letter{
+    width:10vw;
+    margin:0;
+    padding:0;
+}
+
 #all-letters{
-    position:relative;
-}
-
-#logo-container{
     position:absolute;
-    top:10vw;
-    left:3vw;
-}
-
-#cap-H{
-    rotate: -60deg;
-    top:36vw;
-}
-
-#first-i{
-    top: 26vw;
-    rotate:-50deg;
-    left: 6vw;
-}
-
-#first-g{
-    top: 19vw;
-    rotate:-36deg;
-    left:16vw;
-}
-
-#first-h{
-    top: 7.5vw;
-    rotate:-15deg;
-    left:26vw;
+    display:flex;
+    flex-wrap:wrap;
+    width:100vw;
+    top: calc(50% - 5vw);
+    padding-left:8vw;
 }
 
 #l{
-    left: 39vw;
-    top:4vw;
-    rotate: -2deg;
+    margin-right:-2vw;
 }
 
-#second-g{
-    top: 3vw;
-    left:40vw;
+#first-i{
+    margin-left:-2vw;
+    margin-right:-2vw;
 }
+
 #second-i{
-    position:absolute;
     margin-left:-5vw;
-    left:51vw;
-    top:4vw;
+    margin-right:-2vw;
+}
+
+#first-g{
+    padding-top:20px;
 }
 
 #second-g{
-    margin-left:-5vw;
-    left:64vw;
-    top:9vw;
-    rotate:25deg;
-}
-
-#second-h{
-    margin-left:-5vw;
-    left:78vw;
-    top:13vw;
-    rotate:45deg;
+    padding-top:20px;
 }
 
 #t{
-    margin-left:-6vw;
-    top:21vw;
-    left:86.5vw;
-    rotate:58deg;
+    margin-left:-2vw;
 }
 
 #s{
-    margin-left:-7vw;
-    top:30vw;
-    left:92vw;
-    rotate: 63deg;
+    margin-left:-3vw;
+    margin-top:10px;
 }
 
 #big-container{
