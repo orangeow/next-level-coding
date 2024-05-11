@@ -187,6 +187,7 @@
     position:relative;
     top:-80px;
     right:-430px;
+    cursor: pointer;
   }
   /* #folder-insides{
     display:flex;
