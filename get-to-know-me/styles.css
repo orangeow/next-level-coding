@@ -181,6 +181,7 @@
 
   .close-window{
     margin-right:10px;
+    cursor:pointer;
   }
 
   #answer-close{
